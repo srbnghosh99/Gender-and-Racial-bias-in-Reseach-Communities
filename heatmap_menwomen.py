@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the graph
-graph_path = "/Users/shrabanighosh/My work/UNCC/Fall 2024/CHI2025/authors_names/author_info/cv.graphml"  # Replace with your GraphML file
+graph_path = "filename.graphml"  # Replace with your GraphML file
 G = nx.read_graphml(graph_path)
 
 # Ensure the 'gender' attribute exists
