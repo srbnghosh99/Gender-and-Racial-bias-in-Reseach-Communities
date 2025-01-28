@@ -14,7 +14,7 @@ race_pairs = [(r1, r2) for r1, r2 in combinations(races, 2)] + [(r, r) for r in 
 race_heatmap_data = pd.DataFrame(0, index=races, columns=races)
 
 # Step 3: Iterate through edges and classify by race
-G = nx.read_graphml("/Users/shrabanighosh/My work/UNCC/Fall 2024/CHI2025/authors_names/author_info/hci_gender_race.graphml")
+G = nx.read_graphml("filename.graphml")
 
 for u, v in G.edges():
     race_u = G.nodes[u].get('race')
